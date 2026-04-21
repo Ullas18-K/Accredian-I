@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Ullas Y",
+    "email": "mehr@gmail.com",
+    "company": "ABC",
+    "teamSize": "1-10",
+    "message": "hwllo",
+    "id": "c6c2a2e5-77de-4073-b452-17b892828caa",
+    "createdAt": "2026-04-21T17:24:17.829Z"
+  },
+  {
+    "name": "Ullas Y",
+    "email": "exmaple@gmail.com",
+    "company": "ABC",
+    "teamSize": "51-200",
+    "message": "hello123",
+    "id": "aeebcf74-a74e-4a24-8336-775228255c29",
+    "createdAt": "2026-04-21T17:50:34.998Z"
+  }
+]

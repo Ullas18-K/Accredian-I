@@ -9,8 +9,21 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        brand: {
+          blue: "#1E3A5F",
+          orange: "#F97316",
+          dark: "#0F172A",
+          light: "#F8FAFC"
+        }
+      },
+      animation: {
+        "marquee": "marquee var(--duration, 40s) linear infinite",
+      },
+      keyframes: {
+        marquee: {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(-50%)" },
+        },
       },
     },
   },
