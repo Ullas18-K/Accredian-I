@@ -41,7 +41,7 @@ export function TestimonialsSection() {
             >
               <Quote className="absolute top-6 right-6 w-12 h-12 text-slate-200 group-hover:text-amber-100 transition-colors" />
               <p className="text-slate-700 text-lg leading-relaxed mb-8 relative z-10 italic">
-                "{testimonial.quote}"
+                &quot;{testimonial.quote}&quot;
               </p>
               <div className="flex items-center gap-4 mt-auto relative z-10 border-t border-slate-200/60 pt-6">
                 <div className="w-12 h-12 rounded-full bg-gradient-to-br from-brand-orange to-amber-500 flex items-center justify-center text-white font-bold shadow-md shrink-0">

@@ -39,7 +39,7 @@ export async function POST(req: Request) {
       { success: true, message: "Thanks! We'll be in touch within 24 hours." },
       { status: 200 }
     );
-  } catch (error: any) {
+  } catch (error: unknown) {
     if (error instanceof z.ZodError) {
       return NextResponse.json(
         { success: false, error: "Validation failed", details: error.issues },

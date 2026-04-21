@@ -34,5 +34,5 @@ export interface ApiContactResponse {
   success: boolean;
   message?: string;
   error?: string;
-  details?: any[];
+  details?: unknown[];
 }
