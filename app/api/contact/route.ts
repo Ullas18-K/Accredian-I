@@ -1,7 +1,5 @@
 import { NextResponse } from "next/server";
 import { z } from "zod";
-import * as fs from "fs/promises";
-import * as path from "path";
 
 // Define the expected schema for the incoming request
 const contactSchema = z.object({
@@ -41,10 +39,10 @@ export async function POST(req: Request) {
       { success: true, message: "Thanks! We'll be in touch within 24 hours." },
       { status: 200 }
     );
-  } catch (error) {
+  } catch (error: any) {
     if (error instanceof z.ZodError) {
       return NextResponse.json(
-        { success: false, error: "Validation failed", details: error.errors },
+        { success: false, error: "Validation failed", details: error.issues },
         { status: 400 }
       );
     }

@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+
 import { Lightbulb, UserCheck, RefreshCw, Globe, Maximize2, Target, Package } from "lucide-react";
 import { cn } from "@/lib/utils";
 
